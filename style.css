@@ -1,0 +1,174 @@
+
+/* General Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    padding: 25px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    color: #202b46;
+}
+
+.logo span {
+    color: #4361ee;
+}
+
+/* Main */
+main {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+/* Form Card */
+.form-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Hide Inactive Form */
+.form-card[hidden] {
+    display: none;
+}
+
+/* Headings */
+h1 {
+    color: #202b46;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 46px;
+    padding: 12px;
+    border: 1px solid #d5d9e2;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #4361ee;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.12);
+}
+
+/* Button */
+button {
+    width: 100%;
+    height: 46px;
+    background: #4361ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #304bd0;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #9baeff;
+    outline-offset: 3px;
+}
+
+/* Switch Forms */
+.switch-text {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 22px;
+}
+
+.switch-text a {
+    color: #4361ee;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+/* Message */
+.message {
+    margin-top: 18px;
+    color: #23834b;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .form-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+}

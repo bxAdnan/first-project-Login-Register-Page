@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h2 class="logo">By<span>Adnan</span></h2>
+    </header>
+
+    <main>
+
+        <!-- Login Form -->
+        <section class="form-card" id="login-panel">
+
+            <h1>Welcome Back</h1>
+
+            <p class="description">
+                Please login to your account
+            </p>
+
+            <form id="login-form">
+
+                <div class="input-group">
+                    <label for="login-email">Email Address</label>
+                    <input
+                        type="email"
+                        id="login-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input
+                        type="password"
+                        id="login-password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <button type="submit">Log In</button>
+
+            </form>
+
+            <p class="switch-text">
+                Don't have an account?
+                <a href="#signup" id="show-signup">Sign Up</a>
+            </p>
+
+        </section>
+
+
+        <!-- Registration Form -->
+        <section class="form-card" id="signup-panel" hidden>
+
+            <h1>Create Account</h1>
+
+            <p class="description">
+                Join us and create your account
+            </p>
+
+            <form id="signup-form">
+
+                <div class="input-group">
+                    <label for="full-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-email">Email Address</label>
+                    <input
+                        type="email"
+                        id="signup-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input
+                        type="password"
+                        id="signup-password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm_password"
+                        placeholder="Confirm your password"
+                        autocomplete="new-password"
+                        required>
+                </div>
+
+                <button type="submit">Create Account</button>
+
+            </form>
+
+            <p class="switch-text">
+                Already have an account?
+                <a href="#login" id="show-login">Log In</a>
+            </p>
+
+        </section>
+
+        <p class="message" id="message" aria-live="polite"></p>
+
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+</html>
